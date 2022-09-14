@@ -7,6 +7,11 @@ body {
   max-width: 30%;
   margin: 10px;
   border-radius: 15%;
+  transition: all 0.3s ease-out;
+}
+
+.card-filter {
+  padding: 1px;
 }
 
 .menu-productos {
@@ -24,8 +29,8 @@ body {
   background-color: #17252A;
 }
 
-.footer {
-  
+.filter {
+  display: none;  
 }
 
 h1 {

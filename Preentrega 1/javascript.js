@@ -1,3 +1,5 @@
+const d = document;
+
 let productos = [ 
     {Id: 1,
     nombre: "harina 000",
@@ -70,6 +72,15 @@ let carrito = [
 
 console.table (productos)
 
+const addBtn= d.querySelector("#addBtn")
+
+function enviar(param) {
+    alert ("Producto agregado")
+}
+
+addBtn.addEventListener ( "click", () => { 
+    enviar() 
+} )
 
 function filtrarProductos() {
     let parametro = prompt("Ingresa el producto buscado:")
@@ -108,3 +119,27 @@ function calcularTotal() {
     let total = carrito.reduce((acumulador, producto)=>  acumulador + producto.precioKg, envio)
         console.log("Total del carrito + envio:", total)
     }
+
+
+export default function searchFilters(input, selector){
+    d.addEventListener("keyup",(e)=> {
+        if (e.target.matches(input)){
+        
+         if(e.key === "Escape") e.target.value= "";
+        
+         d.querySelectorAll(selector).forEach((el)=>
+            el.textContent.toLowerCase().includes(e.target.value)
+            ? el.classList.remove("filter")
+            :el.classList.add("filter")
+        );
+        } 
+    });
+}
+
+
+
+
+
+
+
+searchFilters (".card-filter",".card")
