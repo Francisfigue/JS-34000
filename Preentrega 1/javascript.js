@@ -77,17 +77,17 @@ const addBtn= d.querySelector("#addBtn")
 function enviar(param) {
     alert ("Producto agregado")
 }
-
 addBtn.addEventListener ( "click", () => { 
     enviar() 
 } )
 
+//funcion para filtrar productos mediante la consola
 function filtrarProductos() {
     let parametro = prompt("Ingresa el producto buscado:")
     let resultado = productos.filter((producto)=> producto.nombre.includes(parametro))
     console.table(resultado)}
 
-
+//ordenar productos por precio
 function ordenarProductosPrecio() {
     productos.sort((a, b)=> {
         if (a.precio > b.precio) {
@@ -101,6 +101,7 @@ function ordenarProductosPrecio() {
     console.table(productos)
 }
 
+//ordenar productos por stock
 function ordenarProductosStock() {
     productos.sort ((a,b) => {
         if (a.stock > b.stock) {
@@ -114,14 +115,32 @@ function ordenarProductosStock() {
     console.table(productos)
 }
 
+//calcula el envio total sumando el envio
 let envio = 550
 function calcularTotal() {
     let total = carrito.reduce((acumulador, producto)=>  acumulador + producto.precioKg, envio)
         console.log("Total del carrito + envio:", total)
     }
 
+//filtro de busqueda productos
+d.addEventListener("keyup",(e)=> {
+        if (e.target.matches("#buscador")) {
+         d.querySelectorAll(".card").forEach(product =>{
+            product.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ? product.classList.remove("filter")
+            : product.classList.add("filter") 
+        
+        })
+    }
+}
+)
 
-export default function searchFilters(input, selector){
+        
+
+    
+
+//buscador
+    /* function searchFilters(input, selector){
     d.addEventListener("keyup",(e)=> {
         if (e.target.matches(input)){
         
@@ -134,12 +153,5 @@ export default function searchFilters(input, selector){
         );
         } 
     });
-}
-
-
-
-
-
-
-
-searchFilters (".card-filter",".card")
+} */
+//searchFilters (".card-filter",".card")

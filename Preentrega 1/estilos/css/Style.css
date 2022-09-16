@@ -1,6 +1,7 @@
 body {
   width: 100%;
   background-color: #DEF2F1;
+  padding-top: 100px;
 }
 
 .card {
@@ -23,16 +24,28 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-content: space-around;
+  align-content: space-between;
   width: 100%;
   margin: 0;
-  background-color: #17252A;
+  background-color: #17252a;
+  position:fixed;
+  z-index: 20;
+  top: 0;
 }
 
 .filter {
   display: none;  
 }
 
+.footer {
+  display: inline;
+  background-color: rgb(73, 173, 231);
+}
+
 h1 {
   color: #FEFFFF;
+}
+
+.cuerpoprincipal{
+  margin-top: 0,5em;
 }
