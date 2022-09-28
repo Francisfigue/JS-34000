@@ -5,20 +5,27 @@ body {
 }
 
 .card {
+  min-width: 250px;
   max-width: 30%;
   margin: 10px;
   border-radius: 15%;
   transition: all 0.3s ease-out;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .card-filter {
   padding: 1px;
 }
 
-.menu-productos {
+
+.blog {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  width: 100%;
 }
 .flex-row {
   display: flex;
@@ -44,8 +51,4 @@ body {
 
 h1 {
   color: #FEFFFF;
-}
-
-.cuerpoprincipal{
-  margin-top: 0,5em;
 }
