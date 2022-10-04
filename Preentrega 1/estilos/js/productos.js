@@ -51,9 +51,9 @@ generadorAutomatico()
 //defino variables DOM
 const contenedorProductos= document.querySelector("#contenedor-productos")
 const contenedorCarrito= document.querySelector("#carrito-contenedor")
-const botonVaciar = document.querySelectorAll("#vaciar-carrito")
-const contadorCarrito = document.querySelectorAll('#contadorCarrito')
-const precioTotal = document.querySelectorAll('#precio-total')
+const botonVaciar = document.querySelector('#vaciar-carrito')
+const contadorCarrito = document.querySelector('#contadorCarrito')
+const precioTotal = document.querySelector('#precio-total')
 
 let carrito = []
 
@@ -86,7 +86,7 @@ stockProductos.forEach((Producto) => {
 
 //vacia el carrito completamente
 botonVaciar.addEventListener('click', () => {
-    carrito.lenght = 0
+    carrito  = []
     actualizarCarrito()
 })
 
