@@ -80,12 +80,31 @@ stockProductos.forEach((Producto) => {
 
     boton.addEventListener('click', () => {
         agregarAlCarrito(Producto.id)
+        Toastify({
+            text: "producto agregado al carrito",
+            duration: 3000,
+            gravity: "bottom",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+              background: "linear-gradient(to right, grey, lightgrey)",
+            },
+          }).showToast();
     })
    
 })
 
 //vacia el carrito completamente
 botonVaciar.addEventListener('click', () => {
+    Swal.fire({
+        title: 'Error!',
+        text: 'Desea vaciar el carrito?',
+        icon: 'Question',
+        confirmButton: 'true',
+        showCancelButton: 'true',
+        confirmButtonText: 'Aceptar',
+        cancelButtonText: 'Cancelar'
+      })
     carrito  = []
     actualizarCarrito()
 })
