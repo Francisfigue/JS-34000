@@ -1,11 +1,12 @@
 //establezco el constructor (Producto) para crear los componentes del array productos
 class Producto {
-    constructor(id, nombre, importe, categoria, stock,) {
+    constructor(id, nombre, importe, categoria, stock, cantidad) {
         this.id = id
         this.nombre = nombre
         this.importe = importe
         this.categoria = categoria
         this.stock = stock
+        this.cantidad = 1
     }
 }
 
@@ -14,36 +15,36 @@ const stockProductos = []
 
 //defino una funcion para completar el array productos con el constructor Producto
 function generadorAutomatico() {
-    stockProductos.push(new Producto(01, "Harina 000", 250, "Harinas", 100))
-    stockProductos.push(new Producto(02, "Harina 0000", 260, "Harinas", 100))
-    stockProductos.push(new Producto(03, "Harina Leudante", 300, "Harinas", 100))
-    stockProductos.push(new Producto(04, "Harina integral", 300, "Harinas", 100))
-    stockProductos.push(new Producto(05, "Harina de Arroz", 400, "Harinas", 100))
-    stockProductos.push(new Producto(06, "Harina de mandioca", 400, "Harinas", 100))
-    stockProductos.push(new Producto(07, "Arroz blanco", 250, "Arroz", 100))
-    stockProductos.push(new Producto(08, "Arroz integral", 350, "Arroz", 100))
-    stockProductos.push(new Producto(09, "Arroz Yamani", 500, "Arroz", 100))
-    stockProductos.push(new Producto(10, "Arroz Doble carolina", 500, "Arroz", 100))
-    stockProductos.push(new Producto(11, "Arroz Carnaroli", 550, "Arroz", 100))
-    stockProductos.push(new Producto(12, "Copos de maiz", 250, "Cereales", 100))
-    stockProductos.push(new Producto(13, "Copos azucarados", 250, "Cereales", 100))
-    stockProductos.push(new Producto(14, "Chocolatitos", 250, "Cereales", 100))
-    stockProductos.push(new Producto(15, "Vainillitas", 250, "Cereales", 100))
-    stockProductos.push(new Producto(16, "Fibritas", 250, "Cereales", 100))
-    stockProductos.push(new Producto(17, "Coquitos", 250, "Cereales", 100))
-    stockProductos.push(new Producto(18, "Sal marina", 250, "Condimentos", 100))
-    stockProductos.push(new Producto(19, "Sal Himalaya", 250, "Condimentos", 100))
-    stockProductos.push(new Producto(20, "Pimienta blanca", 250, "Condimentos", 100))
-    stockProductos.push(new Producto(21, "Pimienta verde", 450, "Condimentos", 100))
-    stockProductos.push(new Producto(22, "Pimienta Roja", 350, "Condimentos", 100))
-    stockProductos.push(new Producto(23, "Pimienta Negra", 350, "Condimentos", 100))
-    stockProductos.push(new Producto(24, "Aji molido", 250, "Condimentos", 100))
-    stockProductos.push(new Producto(25, "Pimenton", 250, "Condimentos", 100))
-    stockProductos.push(new Producto(26, "Nuez moscada", 300, "Condimentos", 100))
-    stockProductos.push(new Producto(27, "Mix tropical", 250, "Frutos secos", 100))
-    stockProductos.push(new Producto(28, "Mix energetico", 250, "Frutos secos", 100))
-    stockProductos.push(new Producto(29, "Mix frutal", 250, "Frutos secos", 100))
-    stockProductos.push(new Producto(30, "Maiz frito", 250, "Frutos secos", 100))
+    stockProductos.push(new Producto(01, "Harina 000", 250, "Harinas", 100, 1))
+    stockProductos.push(new Producto(02, "Harina 0000", 260, "Harinas", 100, 1))
+    stockProductos.push(new Producto(03, "Harina Leudante", 300, "Harinas", 100, 1))
+    stockProductos.push(new Producto(04, "Harina integral", 300, "Harinas", 100, 1))
+    stockProductos.push(new Producto(05, "Harina de Arroz", 400, "Harinas", 100, 1))
+    stockProductos.push(new Producto(06, "Harina de mandioca", 400, "Harinas", 100, 1))
+    stockProductos.push(new Producto(07, "Arroz blanco", 250, "Arroz", 100, 1))
+    stockProductos.push(new Producto(08, "Arroz integral", 350, "Arroz", 100, 1))
+    stockProductos.push(new Producto(09, "Arroz Yamani", 500, "Arroz", 100, 1))
+    stockProductos.push(new Producto(10, "Arroz Doble carolina", 500, "Arroz", 100, 1))
+    stockProductos.push(new Producto(11, "Arroz Carnaroli", 550, "Arroz", 100, 1))
+    stockProductos.push(new Producto(12, "Copos de maiz", 250, "Cereales", 100, 1))
+    stockProductos.push(new Producto(13, "Copos azucarados", 250, "Cereales", 100, 1))
+    stockProductos.push(new Producto(14, "Chocolatitos", 250, "Cereales", 100, 1))
+    stockProductos.push(new Producto(15, "Vainillitas", 250, "Cereales", 100, 1))
+    stockProductos.push(new Producto(16, "Fibritas", 250, "Cereales", 100, 1))
+    stockProductos.push(new Producto(17, "Coquitos", 250, "Cereales", 100, 1))
+    stockProductos.push(new Producto(18, "Sal marina", 250, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(19, "Sal Himalaya", 250, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(20, "Pimienta blanca", 250, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(21, "Pimienta verde", 450, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(22, "Pimienta Roja", 350, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(23, "Pimienta Negra", 350, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(24, "Aji molido", 250, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(25, "Pimenton", 250, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(26, "Nuez moscada", 300, "Condimentos", 100, 1))
+    stockProductos.push(new Producto(27, "Mix tropical", 250, "Frutos secos", 100, 1))
+    stockProductos.push(new Producto(28, "Mix energetico", 250, "Frutos secos", 100, 1))
+    stockProductos.push(new Producto(29, "Mix frutal", 250, "Frutos secos", 100, 1))
+    stockProductos.push(new Producto(30, "Maiz frito", 250, "Frutos secos", 100, 1))
 }
 generadorAutomatico()
 
@@ -54,8 +55,10 @@ const contenedorCarrito= document.querySelector("#carrito-contenedor")
 const botonVaciar = document.querySelector('#vaciar-carrito')
 const contadorCarrito = document.querySelector('#contadorCarrito')
 const precioTotal = document.querySelector('#precio-total')
-
+const comentarios = document.querySelector('#comentarios')
+const URL ="comentarios.json"
 let carrito = []
+let contenidoHTML = ""
 
 //storage
 document.addEventListener('DOMContentLoaded', () =>{
@@ -97,16 +100,23 @@ stockProductos.forEach((Producto) => {
 //vacia el carrito completamente
 botonVaciar.addEventListener('click', () => {
     Swal.fire({
-        title: 'Error!',
+        title: 'Atencion!',
         text: 'Desea vaciar el carrito?',
-        icon: 'Question',
-        confirmButton: 'true',
+        icon: 'question',
         showCancelButton: 'true',
         confirmButtonText: 'Aceptar',
         cancelButtonText: 'Cancelar'
-      })
-    carrito  = []
-    actualizarCarrito()
+      }).then((result) => {
+
+        if (result.isConfirmed) {
+            Swal.fire({
+                text: 'el carrito se vacio con exito!',
+                icon: 'success',})
+            carrito = []
+            }
+        else {}
+        actualizarCarrito()
+    })
 })
 
 //refresca el carrito automaticamente
@@ -118,16 +128,16 @@ const actualizarCarrito = () =>{
         div.className =('productoEnCarrito')
         div.innerHTML=`
         <p>${prod.nombre}</p>
-        <p>${prod.precio}</P>
+        <p>${prod.importe}</P>
         <p>Cantidad:<span id="cantidad">${prod.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"></button>
+        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fa-solid fa-trash-can"></i> <p>eliminar producto</p></button>
         `
         contenedorCarrito.appendChild(div)
 
         localStorage.setItem('carrito', JSON.stringify(carrito))
     })
     contadorCarrito.innerText = carrito.length
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.importe, 0)
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.importe * prod.cantidad, 0)
 }
 
 //funcion para agrupar productos iguales en el carrito
@@ -136,7 +146,7 @@ const agregarAlCarrito = (prodId) => {
     
     if (existe){
         const prod = carrito.map (prod => {
-            if (prod.id == prodId){
+            if (prod.id === prodId){
                 prod.cantidad++
             }
         })
@@ -165,6 +175,35 @@ document.addEventListener("keyup",(e)=> {
         : product.classList.add("filter") 
     
     })
+}})
+
+const cargarPosts = async ()=> {
+    fetch(URL)
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(post => tbody.innerHTML += armoTabla(post))
+        })
+        .catch(error => console.error(error))
+}
+
+const showComments = (contenido) =>{
+    const {user,puntuacion, comentario} = contenido
+    return `<div class="card-comentario">
+    <h3>${user}</h3>
+    <h4>Puntuacion: ${puntuacion}</h4>
+    <p class="comentarios">${comentario}</p>
+    </div>`
+}
+
+const cargarComms = async ()=> {
+   try { 
+    const response = await fetch(URL)
+    const data =await response.json()
+        commen = data
+        commen.forEach (etiqueta => contenidoHTML += showComments(etiqueta))
+    }
+    catch(error) {console.log(error)
 }
 }
-)
+
+cargarComms()
