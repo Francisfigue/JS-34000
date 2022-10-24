@@ -1,0 +1,91 @@
+body {
+  width: 100%;
+  background-color: white;
+  padding-top: 100px;
+}
+
+.boton-agregar {
+  width:min-content;
+  background-color: rgba(33, 235, 33, 0.40);
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.boton-agregar:hover {
+  background-color: rgba(33, 235, 33, 0.750);
+  cursor: pointer;
+}
+
+.card {
+  min-width: 250px;
+  max-width: 25%;
+  margin: 10px;
+  border-radius: 12%;
+  transition: all 0.3s ease-out;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(135, 206, 250, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.comms {
+  min-width: 250px;
+  width: 400px;
+  margin: 10px;
+  border-radius: 12%;
+  transition: all 0.3s ease-out;
+  vertical-align: middle;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.card-filter {
+  padding: 1px;
+}
+
+
+.blog {
+  display: flex;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  width: 100%;
+  margin: 0;
+  background-color: #17252a;
+  position:fixed;
+  z-index: 20;
+  top: 0;
+}
+
+.filter {
+  display: none;  
+}
+
+.footer {
+  display: inline;
+  background-color: rgb(73, 173, 231);
+}
+
+h1 {
+  color: #FEFFFF;
+}
+
+.img-productos {
+  border-radius: 15%;
+  max-width: 250px;
+  height: 200px;
+  border-color: Black;
+  border: 1px solid lightblue;
+}

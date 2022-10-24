@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="estilos/js/jquery.slim.min.js"></script>
+  <script src="estilos/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="estilos/css/Style.css" >
+</head>
+<body>
+
+<header class="flex-row">
+  <div class="container">
+    <h1>Dietetica</h1>
+  </div>
+  <div class="container">
+        <nav class="navbar">
+          <button>
+            <div class="container">
+              <a href="#menu-productos" class="">Menu
+              </a>
+            </div>
+          </button>
+          <button>
+            <div class="container">
+              <a href="#menu-productos" class="">Quienes somos
+              </a>
+            </div>
+          </button>
+          <button>
+            <div class="container">
+              <a href="#footer" class="">Footer
+              </a>
+            </div>
+          </button>
+        </nav>
+  </div> 
+</header>
+
+<section class="blog">
+  <div class="col-md-3 col-lg-2">
+    <p class="">Que estas buscando?</p>
+      <input type="search" placeholder="Buscar..." class="card-filter" id="buscador">
+      <div class="Categorias">
+        <p id="harina">Harina</p>
+        <p id="arroz">Arroz</p>
+        <p id="cereales">Cereales</p>
+        <p id="frutos secos">Frutos Secos</p>
+        <p id="condimentos">Condimentos</p>
+      </div>
+  </div>
+  
+<div id="contenedor-productos" class="card-body"> </div>
+
+<div class="col-lg-1">
+  <div id="carrito-contenedor" class="">
+  </div>
+  <button id="Comprar-carrito">Comprar</button>
+  <button id="vaciar-carrito">vaciar</button>
+
+  <span id="contadorCarrito"></span>
+  <p>Precio total: $ <span id="precio-total"></span></p>
+</div>
+</section>
+
+<div class="d-flex" id="Comentarios"></div>
+
+<footer class="footer">
+  <div class="redes">
+    redes
+  </div>
+</footer>
+
+<script src="estilos/js/productos.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
